@@ -127,20 +127,26 @@ export default function Se7e(){
 
                     <div className={styles.social}>
                         <span className={styles.socialButton}>
-                            <a href="https://www.instagram.com/se7e.estudio"  target="_blank">
+                            <a href="https://www.instagram.com/se7e.estudio"
+                            rel="noreferrer"
+                            target="_blank">
                                 <AiOutlineInstagram/>
                             </a>
                         </span>
 
                         <span className={styles.socialButton}>
-                            <a href="https://api.whatsapp.com/send?phone=5567996641461"  target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=5567996641461"
+                            rel="noreferrer"
+                            target="_blank">
                                 <AiOutlineWhatsApp/>
                             </a>
                         </span>
 
                         <span className={styles.socialButton}>
 
-                            <a href="mailto:se7eestudiodedesign@gmail.com" target="_blank">
+                            <a href="mailto:se7eestudiodedesign@gmail.com"
+                            rel="noreferrer"
+                            target="_blank">
                                 <AiOutlineMail/>
                             </a>
                             
