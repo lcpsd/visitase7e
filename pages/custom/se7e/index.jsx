@@ -92,8 +92,8 @@ export default function Se7e(){
 
     //Video Speed and card height
     if(process.browser){
-        document.querySelector('.businessCard .videoBackground').style.height = window.innerHeight + "px"
         document.querySelector('video').playbackRate = 0.5;
+        document.querySelector('.businessCard .videoBackground').style.height = window.innerHeight + "px"
     }
 
     return(
