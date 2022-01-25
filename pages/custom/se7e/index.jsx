@@ -1,4 +1,4 @@
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 import {AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineMail} from 'react-icons/ai'
 
 export default function Se7e(){
