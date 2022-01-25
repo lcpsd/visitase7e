@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import {AiOutlineInstagram} from 'react-icons/ai'
+import {AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineMail} from 'react-icons/ai'
 
 export default function Se7e(){
 
@@ -93,12 +93,12 @@ export default function Se7e(){
     //Video Speed and card height
     if(process.browser){
         document.querySelector('video').playbackRate = 0.5;
-        document.querySelector('.businessCard').style.height = window.innerHeight
+        document.querySelector('.businessCard .videoBackground').style.height = window.innerHeight + "px"
     }
 
     return(
         <div className={styles.businessCard + " businessCard"}>
-            <video autoPlay muted loop className={styles.videoBackground}>
+            <video autoPlay muted loop className={styles.videoBackground + " videoBackground"}>
                 <source src='/se7e/video/BWBG1.mp4' type='video/mp4'/>
             </video>
 
@@ -107,7 +107,11 @@ export default function Se7e(){
 
                     <div className={styles.profile}>
                         <img src="/se7e/image/logo.png" alt="" />
-                        <p>se7e | Estúdio de Design</p>
+                        
+                        <div className={styles.title}>
+                            <h1>se7e</h1>
+                            <p>Estúdio de Design</p>
+                        </div>
 
                         <div className={styles.list}>
                             {
@@ -123,7 +127,23 @@ export default function Se7e(){
 
                     <div className={styles.social}>
                         <span className={styles.socialButton}>
-                            <AiOutlineInstagram/>
+                            <a href="https://www.instagram.com/se7e.estudio"  target="_blank">
+                                <AiOutlineInstagram/>
+                            </a>
+                        </span>
+
+                        <span className={styles.socialButton}>
+                            <a href="https://api.whatsapp.com/send?phone=5567996641461"  target="_blank">
+                                <AiOutlineWhatsApp/>
+                            </a>
+                        </span>
+
+                        <span className={styles.socialButton}>
+
+                            <a href="mailto:se7eestudiodedesign@gmail.com" target="_blank">
+                                <AiOutlineMail/>
+                            </a>
+                            
                         </span>
                     </div>
                 </div>
