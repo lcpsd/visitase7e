@@ -6,7 +6,7 @@ import { QAsection } from './components/QAsection'
 import { ContactSection } from './components/ContactSection'
 import { Goback } from './components/GoBack'
 
-export function LandingPage(){
+export default function LandingPage(){
 
     return(
         <>
