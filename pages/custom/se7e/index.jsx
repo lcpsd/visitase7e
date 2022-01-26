@@ -90,14 +90,9 @@ export default function Se7e(){
         }
     ]
 
-    //Video Speed and card height
-    if(process.browser){
-        document.querySelector('video').playbackRate = 0.5;
-        document.querySelector('.businessCard .videoBackground').style.height = window.innerHeight + "px"
-    }
-
     return(
         <div className={styles.businessCard + " businessCard"}>
+
             <video autoPlay muted loop className={styles.videoBackground + " videoBackground"}>
                 <source src='/se7e/video/BWBG1.mp4' type='video/mp4'/>
             </video>
@@ -106,13 +101,9 @@ export default function Se7e(){
                 <div>
 
                     <div className={styles.profile}>
-                        <img src="/se7e/image/logo.png" alt="" />
                         
-                        <div className={styles.title}>
-                            <h1>se7e</h1>
-                            <p>Estúdio de Design</p>
-                        </div>
-
+                        <img src="/se7e/image/logo.png" alt="" />
+                            
                         <div className={styles.list}>
                             {
                                 products.map(product => (
