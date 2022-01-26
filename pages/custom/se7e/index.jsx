@@ -95,7 +95,7 @@ export default function Se7e(){
     return(
         <div className={styles.businessCard + " businessCard"}>
 
-            <video autoPlay muted loop className={styles.videoBackground + " videoBackground"}>
+            <video autoPlay muted loop className={styles.videoBackground}>
                 <source src='/se7e/video/BWBG1.mp4' type='video/mp4'/>
             </video>
 

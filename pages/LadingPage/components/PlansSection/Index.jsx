@@ -77,6 +77,29 @@ export default function PlansSection(){
                             </Link>
                         </div>
                     </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div className="planCard shadowBox">
+                            <div className="text">
+                                <h4>
+                                    Custom
+                                </h4>
+
+                                <p>
+                                Um cartão único criado especialmente para você, contendo suas necessidades dentro da proposta de cartão de visitas.
+                                </p>
+
+                                <span>
+                                    R$50,00/Mês
+                                </span>
+                            </div>
+
+                            <Link href={"https://api.whatsapp.com/send?phone=5567996641461"}>
+                                <button>Peça Agora</button>
+                            </Link>
+                        </div>
+                    </SwiperSlide>
+
                 </Swiper>
             </div>
         </Styles>

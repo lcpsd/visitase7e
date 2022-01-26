@@ -32,7 +32,7 @@ const styles = styled.section`
             font-size: 2rem;
             line-height: 2rem;
             align-self: flex-start;
-    
+
             span{
                 color: var(--purple-100);
             }
@@ -80,6 +80,9 @@ const styles = styled.section`
 
                     span{
                         color: var(--blue-gray-950);
+
+                        text-align: center;
+
                         p{
                             color: var(--blue-gray-950);
                         }
@@ -145,6 +148,8 @@ const styles = styled.section`
                     color: var(--purple-100);
                     font-size: 1.3rem;
                     font-weight: 500;
+
+                    text-align: center;
 
                     p{
                         color: var(--purple-100);
