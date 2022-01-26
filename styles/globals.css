@@ -20,6 +20,15 @@ body {
 
 button{
   cursor: pointer;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  border: 0;
 }
 
 /* width */
@@ -29,13 +38,14 @@ button{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--blue-gray-950);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: var(--purple-100);
+  background: var(--blue-gray-950);
+  border:1px solid var(--purple-100);
 }
 
 /* Handle on hover */

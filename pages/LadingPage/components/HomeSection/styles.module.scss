@@ -1,0 +1,114 @@
+.homeSection{
+    margin-top: 80px;
+
+    background: var(--blue-gray-950);
+
+    height: calc(100vh - 80px);
+    width: 100%;
+
+    padding: 1.5rem;
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+
+    // divisor
+    &::after{
+        content: '';
+        position: absolute;
+        margin: 0 auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 80%;
+        height: 1px;
+        background: var(--blue-gray-750);
+    }
+
+    .container{
+        margin: 0 auto;
+
+        width: 100%;
+        max-width: 1120px;
+
+        display: flex;
+
+        .text{
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+
+            h1{
+                font-size: 2.8rem;
+                line-height: 3rem;
+                font-weight: 500;
+        
+                .textSerif{
+                    font-family: 'Sorts Mill Goudy', serif;
+                }
+        
+                .textDisplay{
+                    font-family: 'Play', sans-serif;
+                    color: var(--purple-100);
+                }
+        
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background: var(--purple-100);
+                    margin-top: 1rem;
+                }
+            }
+        
+            p{
+                margin: 0;
+                font-size: 1.4rem;
+                font-weight: 200;
+            }
+        
+            button{
+                padding: 0.5rem;
+                width: 100px;
+                background: var(--purple-100);
+                
+                border-radius: 0 0.3rem 0.3rem 0;
+        
+                font-weight: bold;
+        
+                text-transform: inherit;
+                color: #fff;
+            }
+        }
+
+        .smartphone{
+            display: none;
+            flex: 2;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+        }
+    }
+}
+
+@media(min-width: 1024px){
+    .homeSection{
+        .container{
+            .smartphone{
+                display: block;
+            }
+        }
+    }
+}
