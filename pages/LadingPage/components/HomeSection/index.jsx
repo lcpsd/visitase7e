@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from './styles.module.scss'
 
-export function HomeSection(){
+export default function HomeSection(){
 
     return(
         <section className={styles.homeSection} id='homeSection'>

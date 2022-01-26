@@ -1,7 +1,7 @@
 import { CollapseCard } from './CollapseCard'
 import styles from './styles.module.scss'
 
-export function QAsection(){
+export default function QAsection(){
 
     const questions = [
         {

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import Styles from './styles'
 import { ToolCard } from './ToolCard'
 
-export function ToolsSection(){
+export default function ToolsSection(){
 
     const cardInfo = [
         {

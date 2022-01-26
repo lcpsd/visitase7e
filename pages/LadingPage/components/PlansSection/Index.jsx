@@ -5,7 +5,7 @@ import { Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-export function PlansSection(){
+export default function PlansSection(){
 
     return(
         <Styles id='plansSection'>

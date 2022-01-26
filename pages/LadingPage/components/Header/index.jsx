@@ -3,7 +3,7 @@ import {IoMdClose} from 'react-icons/io'
 import styles from './styles.module.scss'
 import { useState } from 'react'
 
-export function Header(){
+export default function Header(){
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [currentMenu, setCurrentMenu] = useState("homeSection")

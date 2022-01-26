@@ -3,7 +3,7 @@ import {RiWhatsappLine} from 'react-icons/ri'
 import {GrInstagram} from 'react-icons/gr'
 import styles from './styles.module.scss'
 
-export function ContactSection(){
+export default function ContactSection(){
     
     return(
         <section className={styles.contact} id='contactSection'>
