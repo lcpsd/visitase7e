@@ -89,6 +89,8 @@ export default function Se7e(){
             text: "canecas mágicas"
         }
     ]
+    
+    process.browser ? document.querySelector('video').playbackRate = 0.8 : null
 
     return(
         <div className={styles.businessCard + " businessCard"}>
@@ -102,8 +104,13 @@ export default function Se7e(){
 
                     <div className={styles.profile}>
                         
-                        <img src="/se7e/image/logo.png" alt="" />
+                        <div className={styles.headInfo}>
+                            <img src="/se7e/image/logo.png" alt="" />
                             
+                            <p>Seg &gt; Dom</p>
+                            <p>09:00 ás 18:00 	&#40;MS&#41;</p>
+                        </div>
+
                         <div className={styles.list}>
                             {
                                 products.map(product => (
