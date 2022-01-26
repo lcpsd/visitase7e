@@ -1,7 +1,7 @@
 import { A11y, Pagination, Scrollbar } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Styles from './styles'
-import { ToolCard } from './ToolCard'
+import ToolCard from './ToolCard'
 
 export default function ToolsSection(){
 

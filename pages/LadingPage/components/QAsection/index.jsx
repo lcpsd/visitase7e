@@ -1,4 +1,4 @@
-import { CollapseCard } from './CollapseCard'
+import CollapseCard from './CollapseCard'
 import styles from './styles.module.scss'
 
 export default function QAsection(){
