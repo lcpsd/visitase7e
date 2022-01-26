@@ -2,7 +2,7 @@ import {IoIosArrowUp} from 'react-icons/io'
 import Link from 'next/link'
 import styles from './styles.module.scss'
 
-export function Goback(){
+export default function Goback(){
 
     function resetScroll(){
         window.scrollTo(0, 0);

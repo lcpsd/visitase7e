@@ -2,7 +2,7 @@ import { useState } from 'react'
 import {Collapse} from 'react-collapse';
 import styles from './styles.module.scss'
 
-export function CollapseCard({title, text}){
+export default function CollapseCard({title, text}){
 
     const [isCollapseOpened, setIsCollapseOpened] = useState(false)
 
