@@ -1,0 +1,46 @@
+.qaSection{
+    background: var(--blue-gray-950);
+
+    height: 100%;
+    width: 100%;
+
+    padding: 1.5rem;
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .container{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        >p{
+            text-transform: uppercase;
+            font-size: 2rem;
+            line-height: 2rem;
+    
+            text-align: start;
+    
+            width: 100%;
+    
+            span{
+                color: var(--purple-100);
+            }
+        }
+
+        .questions{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            gap: 1rem;
+        }
+    }
+}
