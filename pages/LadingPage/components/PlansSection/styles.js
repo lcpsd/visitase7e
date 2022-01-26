@@ -126,7 +126,7 @@ const styles = styled.section`
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-
+                
                 gap: 1rem;
 
                 h4{
@@ -134,14 +134,17 @@ const styles = styled.section`
                     text-transform: uppercase;
                     font-weight: 600;
                     color: var(--purple-100);
+                    
+                    text-align: center;
                 }
 
                 p{
                     font-size: 0.8rem;
                     line-height: 1.2rem;
-                    text-align: left;
+                    text-align: center;
                     font-weight: 400;
                     text-transform: initial;
+                    
                 }
 
                 span{
