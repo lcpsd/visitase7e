@@ -14,7 +14,7 @@ const styles = styled.div`
 
     .videoBackground{
         width: 100vw;
-        height: ${props => props.documentHeight};
+        height: 100vh;
 
         position: absolute;
         left: 0;
@@ -25,7 +25,7 @@ const styles = styled.div`
     }
 
     background: var(--foryou-green-400);
-    height: ${props => props.documentHeight};
+    height: 100vh;
     width: 100vw;
 
     display: flex;
@@ -36,9 +36,8 @@ const styles = styled.div`
     padding: 1rem 0;
 
     
-    
     .container{
-        height: 100%;
+        height: 93%;
         width: 100%;
         max-width: 400px;
         
@@ -92,7 +91,7 @@ const styles = styled.div`
                         border-radius: 0.5rem 0.5rem 0 0;
     
                         width: 100%;
-                        height: 100%;
+                        height: 100px;
     
                         object-fit: cover;
                     }
@@ -115,6 +114,11 @@ const styles = styled.div`
                         text-transform: uppercase;
     
                         color: var(--foryou-green-700);
+
+                        &.final{
+                            text-align: center;
+                            border-radius: 0.5rem;
+                        }
                     }
                 }
                 
@@ -166,7 +170,8 @@ const styles = styled.div`
                         color: var(--foryou-green-100);
     
                         
-                    }                
+                    }
+
                     span{
                         position: absolute;
                         top: 0.5rem;
