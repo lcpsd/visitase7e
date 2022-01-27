@@ -1,0 +1,41 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+
+    background: var(--foryou-green-700);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 2rem;
+
+    color: #fff;
+
+    span{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        font-size: 2.5rem;
+
+        color: var(--foryou-green-100);
+
+    }
+
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-transform: uppercase;
+
+    }
+}

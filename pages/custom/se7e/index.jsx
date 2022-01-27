@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
 import {AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineMail} from 'react-icons/ai'
 
-export default function Se7e(){
+export default function Index(){
 
     const products = [
         {
