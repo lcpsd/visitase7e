@@ -25,7 +25,7 @@ const styles = styled.div`
     }
 
     background: var(--foryou-green-400);
-    height: 100vh;
+    height: ${props => props.documentHeight};
     width: 100vw;
 
     display: flex;
@@ -38,6 +38,7 @@ const styles = styled.div`
     gap: 1rem;
 
     .logo{
+        animation: fadeIn 2s ease-in-out;
         flex: 1;
 
         border-radius: 100%;
@@ -48,9 +49,11 @@ const styles = styled.div`
     }
 
     .cards{
+        animation: fadeIn 2s ease-in-out;
+
         flex: 6;
         height: 100%;
-        width: 200px;
+        width: 300px;
         
         .swiper-pagination-bullet{
             padding: 0.3rem;
@@ -107,6 +110,8 @@ const styles = styled.div`
     }
 
     .social{
+        animation: fadeIn 2s ease-in-out;
+
         width: 100%;
         flex: 1;
 

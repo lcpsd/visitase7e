@@ -31,8 +31,14 @@ export default function Card(){
         setIsModalVisible(!isModalVisible)
     }
 
+    let documentHeight = "100vh"
+
+    if(process.browser){
+        documentHeight = window.innerHeight + "px"
+    }
+
     return(
-        <Styles>
+        <Styles documentHeight={documentHeight}>
 
             {isModalVisible && <Modal/>}
             {isPhoneModalVisible && <PhoneModal/>}
