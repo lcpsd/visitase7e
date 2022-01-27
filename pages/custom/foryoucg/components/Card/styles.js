@@ -25,7 +25,7 @@ const styles = styled.div`
     }
 
     background: var(--foryou-green-400);
-    height: ${props => props.documentHeight};
+    height: 100vh;
     width: 100vw;
 
     display: flex;
@@ -35,151 +35,165 @@ const styles = styled.div`
 
     padding: 1rem 0;
 
-    gap: 1rem;
-
-    .logo{
-        animation: fadeIn 2s ease-in-out;
-        flex: 1;
-
-        border-radius: 100%;
-        border: 2px solid var(--foryou-green-700);
-
-        height: 125px;
-        width: auto;
-    }
-
-    .cards{
-        animation: fadeIn 2s ease-in-out;
-
-        flex: 6;
-        height: 100%;
-        width: 300px;
-        
-        .swiper-pagination-bullet{
-            padding: 0.3rem;
-            background: var(--foryou-green-700);
-            filter: brightness(0.2);
-        }
-
-        .swiper-pagination-bullet-active{
-            filter: brightness(1);
-            background: var(--foryou-green-100);
-        }
-
-        .swiper-wrapper{
-            height: 100%;
-            .swiper-slide {
-                
-                display: flex;
-                flex-direction: column;
-
-                
-                img{
-                    flex: 5;
-
-                    border-radius: 0.5rem 0.5rem 0 0;
-
-                    width: 100%;
-                    height: 100%;
-
-                    object-fit: cover;
-                }
     
-                div{
-                    flex: 1;
-                    width: 100%;
-
-                    background: #fff;
-
-                    margin-bottom: 3rem;
-
-                    border-radius: 0 0 0.5rem 0.5rem;
-
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    font-weight: bold;
-                    text-transform: uppercase;
-
-                    color: var(--foryou-green-700);
-                }
-            }
-            
-        }
-    }
-
-    .social{
-        animation: fadeIn 2s ease-in-out;
-
+    
+    .container{
+        height: ${props => props.documentHeight};
         width: 100%;
-        flex: 1;
-
-        padding: 0 1.5rem;
+        max-width: 400px;
         
-        .swiper-button-prev, .swiper-button-next{
-            &:after{
-                color: var(--foryou-green-100);
-                font-size: 1rem;
-            }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 1rem;
+        
+        .logo{
+            animation: fadeIn 2s ease-in-out;
+            flex: 1;
+    
+            border-radius: 100%;
+            border: 2px solid var(--foryou-green-700);
+    
+            height: 125px;
+            width: auto;
         }
 
-        .swiper-wrapper{
+        .cards{
+            animation: fadeIn 2s ease-in-out;
+    
+            flex: 6;
+            height: 100%;
+            width: 300px;
+            
+            .swiper-pagination-bullet{
+                padding: 0.3rem;
+                background: var(--foryou-green-700);
+                filter: brightness(0.2);
+            }
+    
+            .swiper-pagination-bullet-active{
+                filter: brightness(1);
+                background: var(--foryou-green-100);
+            }
+    
+            .swiper-wrapper{
+                height: 100%;
+                .swiper-slide {
+                    
+                    display: flex;
+                    flex-direction: column;
+    
+                    
+                    img{
+                        flex: 5;
+    
+                        border-radius: 0.5rem 0.5rem 0 0;
+    
+                        width: 100%;
+                        height: 100%;
+    
+                        object-fit: cover;
+                    }
+        
+                    div{
+                        flex: 1;
+                        width: 100%;
+    
+                        background: #fff;
+    
+                        margin-bottom: 3rem;
+    
+                        border-radius: 0 0 0.5rem 0.5rem;
+    
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+                        font-weight: bold;
+                        text-transform: uppercase;
+    
+                        color: var(--foryou-green-700);
+                    }
+                }
+                
+            }
+        }
+    
+        .social{
+            animation: fadeIn 2s ease-in-out;
+    
             width: 100%;
-
-            .swiper-slide{
-                
-                display: flex;
-                align-items: center;
-
-                
-                position: relative;
-
-                width: 100%;
-
-                a{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    height: 40px;;
-                    width: 40px;
-
-                    background: var(--foryou-green-700);
-
-                    border-radius: 100%;
-
-                    font-size: 1.5rem;
-
+            flex: 1;
+    
+            padding: 0 1.5rem;
+            
+            .swiper-button-prev, .swiper-button-next{
+                &:after{
                     color: var(--foryou-green-100);
-
-                    
-                }                
-                span{
-                    position: absolute;
-                    top: 0.5rem;
-                    right: 1rem;
-
                     font-size: 1rem;
-
-                    background: var(--foryou-green-100);
+                }
+            }
+    
+            .swiper-wrapper{
+                width: 100%;
+    
+                .swiper-slide{
                     
-                    height: 20px;
-                    width: 20px;
-
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-
-                    border-radius: 100%;
-
-                    color: var(--foryou-green-700);
-
-                    font-weight: bold;
+    
+                    
+                    position: relative;
+    
+                    width: 100%;
+    
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+                        height: 40px;;
+                        width: 40px;
+    
+                        background: var(--foryou-green-700);
+    
+                        border-radius: 100%;
+    
+                        font-size: 1.5rem;
+    
+                        color: var(--foryou-green-100);
+    
+                        
+                    }                
+                    span{
+                        position: absolute;
+                        top: 0.5rem;
+                        right: 1rem;
+    
+                        font-size: 1rem;
+    
+                        background: var(--foryou-green-100);
+                        
+                        height: 20px;
+                        width: 20px;
+    
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+                        border-radius: 100%;
+    
+                        color: var(--foryou-green-700);
+    
+                        font-weight: bold;
+                    }
                 }
             }
         }
     }
+
 }`
 
 export default styles

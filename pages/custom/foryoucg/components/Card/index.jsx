@@ -34,7 +34,7 @@ export default function Card(){
     let documentHeight = "100vh"
 
     if(process.browser){
-        documentHeight = window.innerHeight + "px"
+        documentHeight = innerHeight - 20 + "px"
     }
 
     return(
@@ -47,69 +47,71 @@ export default function Card(){
                 <source src='/foryou/video/BG01.mp4' type='video/mp4'/>
             </video>
 
-            <img src="/foryou/image/logo.jpg" alt="" className="logo" />
+            <div className="container">
+                <img src="/foryou/image/logo.jpg" alt="" className="logo" />
 
-            <Swiper
-            modules={[Pagination, A11y]}
-            slidesPerView={1}
-            spaceBetween={10}
-            pagination={{ clickable: true }}
-            className="cards">
+                <Swiper
+                modules={[Pagination, A11y]}
+                slidesPerView={1}
+                spaceBetween={10}
+                pagination={{ clickable: true }}
+                className="cards">
 
-                <SwiperSlide>
-                    <img src="/foryou/image/logo.jpg" alt="" />
-                    <div>
-                        Pedras Quentes
-                    </div>
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="/foryou/image/logo.jpg" alt="" />
+                        <div>
+                            Pedras Quentes
+                        </div>
+                    </SwiperSlide>
 
-                <SwiperSlide>
-                    <img src="/foryou/image/logo.jpg" alt="" />
-                    <div>
-                        Pedras Quentes
-                    </div>
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="/foryou/image/logo.jpg" alt="" />
+                        <div>
+                            Pedras Quentes
+                        </div>
+                    </SwiperSlide>
 
-            </Swiper>
+                </Swiper>
 
-            <Swiper
-            modules={[Navigation, A11y]}
-            slidesPerView={4}
-            navigation
-            className="social">
-                <SwiperSlide>
-                    <a href='#' onClick={() => setIsPhoneModalVisible(!isPhoneModalVisible)}>
-                        <AiOutlinePhone/>
-                    </a>
-                </SwiperSlide>
+                <Swiper
+                modules={[Navigation, A11y]}
+                slidesPerView={4}
+                navigation
+                className="social">
+                    <SwiperSlide>
+                        <a href='#' onClick={() => setIsPhoneModalVisible(!isPhoneModalVisible)}>
+                            <AiOutlinePhone/>
+                        </a>
+                    </SwiperSlide>
 
-                <SwiperSlide>
-                    <a href='mailto:clinicaforyou.cg@gmail.com' target="_blank">
-                        <AiOutlineMail/>
-                    </a>
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <a href='mailto:clinicaforyou.cg@gmail.com' target="_blank">
+                            <AiOutlineMail/>
+                        </a>
+                    </SwiperSlide>
 
-                <SwiperSlide>
-                    <a href='https://instagram.com/clinicaforyou.cg' target="_blank">
-                        <AiOutlineInstagram/>
-                    </a>
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <a href='https://instagram.com/clinicaforyou.cg' target="_blank">
+                            <AiOutlineInstagram/>
+                        </a>
+                    </SwiperSlide>
 
-                <SwiperSlide>
-                    <a onClick={handleClockModal}>
-                        <AiOutlineClockCircle/>
-                    </a>
-                    
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <a onClick={handleClockModal}>
+                            <AiOutlineClockCircle/>
+                        </a>
+                        
+                    </SwiperSlide>
 
-                <SwiperSlide>
-                    <a onClick={handleLocationModal}>
-                        <GoLocation/>
-                    </a>
-                    
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <a onClick={handleLocationModal}>
+                            <GoLocation/>
+                        </a>
+                        
+                    </SwiperSlide>
 
-            </Swiper>
+                </Swiper>
+            </div>
         </Styles>
     )
 }
