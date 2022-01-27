@@ -14,7 +14,7 @@ const styles = styled.div`
 
     .videoBackground{
         width: 100vw;
-        height: 100vh;
+        height: ${props => props.documentHeight};
 
         position: absolute;
         left: 0;
@@ -25,7 +25,7 @@ const styles = styled.div`
     }
 
     background: var(--foryou-green-400);
-    height: 100vh;
+    height: ${props => props.documentHeight};
     width: 100vw;
 
     display: flex;
@@ -38,7 +38,7 @@ const styles = styled.div`
     
     
     .container{
-        height: ${props => props.documentHeight};
+        height: 100%;
         width: 100%;
         max-width: 400px;
         
@@ -125,7 +125,7 @@ const styles = styled.div`
             animation: fadeIn 2s ease-in-out;
     
             width: 100%;
-            flex: 1;
+            flex: 0.5;
     
             padding: 0 1.5rem;
             

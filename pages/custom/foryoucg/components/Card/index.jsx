@@ -34,7 +34,7 @@ export default function Card(){
     let documentHeight = "100vh"
 
     if(process.browser){
-        documentHeight = innerHeight - 20 + "px"
+        documentHeight = innerHeight + "px"
     }
 
     return(
