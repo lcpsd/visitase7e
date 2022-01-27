@@ -27,7 +27,7 @@ export default function Card(){
     }
 
     function handleLocationModal(){
-        setModalData(["Rua Josè Gomes Domjngues, N°1377. Bairro: Santa Fé"])
+        setModalData(["Rua José Gomes Domjngues, N°1377","Bairro: Santa Fé"])
         setIsModalVisible(!isModalVisible)
     }
 
