@@ -129,7 +129,7 @@ const styles = styled.div`
             animation: fadeIn 2s ease-in-out;
     
             width: 100%;
-            flex: 0.5;
+            flex: 0.8;
     
             padding: 0 1.5rem;
             
