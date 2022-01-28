@@ -6,7 +6,7 @@ export default function QAsection(){
     const questions = [
         {
             title: "Posso pedir reembolso?",
-            text: "No plano mensal não é possível pedir reembolso. No plano anual o reembolso é feito em até 30 dias."
+            text: "No plano mensal não é possível pedir reembolso. No plano anual o reembolso é feito se solicitado em até 30 dias após o pagamento."
         },
         {
             title: "Posso cancelar minha conta?",
