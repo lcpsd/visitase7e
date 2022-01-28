@@ -12,14 +12,14 @@ export default function PhoneModal(){
             <span onClick={() => setIsPhoneModalVisible(!isPhoneModalVisible)}>
                 <IoMdClose/>
             </span>
-            <a href='https://api.whatsapp.com/send?phone=5567999876779' target="_blank">
+            <a href='https://api.whatsapp.com/send?phone=5567999876779' rel="noreferrer" target="_blank">
                 <BsWhatsapp/>
                 <p>Não sou cliente</p>
                 <div className={styles.arrow}>
                     <IoIosArrowForward/>
                 </div>
             </a>
-            <a href='https://api.whatsapp.com/send?phone=5567993090921'target="_blank" className={styles.invert}>
+            <a href='https://api.whatsapp.com/send?phone=5567993090921' rel="noreferrer" target="_blank" className={styles.invert}>
                 <BsWhatsapp/>
                 <p>Já sou cliente</p>
                 <div className={styles.arrow}>
