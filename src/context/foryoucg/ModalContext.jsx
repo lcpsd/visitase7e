@@ -25,9 +25,3 @@ export function ModalContextProvider({children}){
 export function useModalContext(){
     return useContext(ModalContext)
 }
-
-export default function index(){
-    return(
-        <></>
-    )
-}

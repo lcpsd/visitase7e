@@ -1,4 +1,4 @@
-import { useModalContext } from '../context/ModalContext'
+import { useModalContext } from '../../../../../context/foryoucg/ModalContext'
 import {IoMdClose, IoIosArrowForward} from 'react-icons/io'
 import styles from './styles.module.scss'
 import { BsWhatsapp } from 'react-icons/bs'

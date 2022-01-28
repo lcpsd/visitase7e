@@ -9,7 +9,7 @@ import {
     AiOutlineClockCircle
 } from 'react-icons/ai'
 import {GoLocation} from 'react-icons/go'
-import { useModalContext } from '../context/ModalContext'
+import { useModalContext } from '../../../../../context/foryoucg/ModalContext'
 import Modal from '../modal'
 import PhoneModal from '../PhoneModal'
 
