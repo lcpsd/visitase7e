@@ -109,7 +109,7 @@ export default function Card(){
     ]
 
     function handleClockModal(){
-        setModalData(["Seg 13h ás 19h", "Ter-Sex 08h ás 19h", "Sab 07h ás 13h"])
+        setModalData(["Seg: 13h ás 19h", "Ter-Sex: 08h ás 19h", "Sab: 07h ás 13h"])
         setIsModalVisible(!isModalVisible)
     }
 
