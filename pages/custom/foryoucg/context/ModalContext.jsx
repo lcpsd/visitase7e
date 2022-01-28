@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 
 export const ModalContext = createContext()
 
-export function ModalContextProvider({children}){
+export default function ModalContextProvider({children}){
 
     const [isModalVisible, setIsModalVisible] = useState(false)
     const [isPhoneModalVisible, setIsPhoneModalVisible] = useState(false)
