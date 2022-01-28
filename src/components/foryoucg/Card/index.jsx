@@ -37,11 +37,6 @@ export default function Card(){
             title: "Festa No Spa"
         },
         {
-            id: 3,
-            image_link: "/foryou/image/3-spa-surpresa.jpg",
-            title: "Spa Supresa"
-        },
-        {
             id: 4,
             image_link: "/foryou/image/4-spa-pes.jpg",
             title: "Spa Para os Pés"
@@ -57,19 +52,9 @@ export default function Card(){
             title: "Vale Presente"
         },
         {
-            id: 7,
-            image_link: "/foryou/image/7-drenagem.jpg",
-            title: "Drenagem Linfática"
-        },
-        {
             id: 8,
-            image_link: "/foryou/image/8-massagem-relaxante.jpg",
-            title: "Massagem Relaxante"
-        },
-        {
-            id: 9,
             image_link: "/foryou/image/9-massagem-modeladora.jpg",
-            title: "Massagem Modeladora"
+            title: "5 tipos de Massagem"
         },
         {
             id: 10,
