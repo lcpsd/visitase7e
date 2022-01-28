@@ -1,4 +1,4 @@
-import { useModalContext } from '../../context/modalContext'
+import { useModalContext } from '../../context/ModalContext'
 import {IoMdClose} from 'react-icons/io'
 import styles from './styles.module.scss'
 

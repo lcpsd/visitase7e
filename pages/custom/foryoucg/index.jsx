@@ -1,5 +1,5 @@
 import Card from "./components/Card";
-import { ModalContextProvider } from "./context/modalContext";
+import { ModalContextProvider } from "./context/ModalContext";
 
 export default function Index(){
     return(
