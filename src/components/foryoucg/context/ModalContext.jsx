@@ -6,6 +6,7 @@ export function ModalContextProvider({children}){
 
     const [isModalVisible, setIsModalVisible] = useState(false)
     const [isPhoneModalVisible, setIsPhoneModalVisible] = useState(false)
+    const [isLocationModalVisible, setIsLocationModalVisible] = useState(false)
     const [modalData, setModalData] = useState([])
 
     return(
@@ -15,7 +16,9 @@ export function ModalContextProvider({children}){
             modalData,
             setModalData,
             isPhoneModalVisible,
-            setIsPhoneModalVisible
+            setIsPhoneModalVisible,
+            isLocationModalVisible,
+            setIsLocationModalVisible
             }}>
             {children}
         </ModalContext.Provider>

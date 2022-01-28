@@ -12,6 +12,7 @@ import {GoLocation} from 'react-icons/go'
 import { useModalContext } from '../context/ModalContext'
 import Modal from '../modal'
 import PhoneModal from '../PhoneModal'
+import LocationModal from '../LocationModal'
 
 export default function Card(){
 
@@ -19,7 +20,10 @@ export default function Card(){
         setIsModalVisible,
         setModalData, 
         isPhoneModalVisible,
-        setIsPhoneModalVisible} = useModalContext()
+        setIsPhoneModalVisible,
+        isLocationModalVisible,
+        setIsLocationModalVisible
+    } = useModalContext()
 
     const allServices = [
         {
@@ -110,8 +114,8 @@ export default function Card(){
     }
 
     function handleLocationModal(){
-        setModalData(["Rua José Gomes Domjngues, N°1377","Bairro: Santa Fé"])
-        setIsModalVisible(!isModalVisible)
+        setModalData(["Rua José Gomes Domingues, 1377 - Santa Fe, Campo Grande - MS"])
+        setIsLocationModalVisible(!isLocationModalVisible)
     }
 
     let documentHeight = "100vh"
@@ -125,6 +129,10 @@ export default function Card(){
 
             {isModalVisible && <Modal/>}
             {isPhoneModalVisible && <PhoneModal/>}
+            {isLocationModalVisible && 
+            <LocationModal 
+            location={"https://www.google.com/maps/place/Cl%C3%ADnica+For+You+Est%C3%A9tica+%26+SPA+DAY/@-20.4502477,-54.5929753,21z/data=!4m5!3m4!1s0x9486e9f92b153217:0x462abda96756719a!8m2!3d-20.4502534!4d-54.5929533"}/>
+            }
 
             <video autoPlay muted loop className="videoBackground">
                 <source src='/foryou/video/BG01.mp4' type='video/mp4'/>
