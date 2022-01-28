@@ -172,13 +172,13 @@ export default function Card(){
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <a href='mailto:clinicaforyou.cg@gmail.com' target="_blank">
+                        <a href='mailto:clinicaforyou.cg@gmail.com' target="_blank" rel="noreferrer">
                             <AiOutlineMail/>
                         </a>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <a href='https://instagram.com/clinicaforyou.cg' target="_blank">
+                        <a href='https://instagram.com/clinicaforyou.cg' target="_blank" rel="noreferrer">
                             <AiOutlineInstagram/>
                         </a>
                     </SwiperSlide>

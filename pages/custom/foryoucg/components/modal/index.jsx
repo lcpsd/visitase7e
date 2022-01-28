@@ -13,7 +13,7 @@ export default function Modal(){
             </span>
             {
                 modalData.map(item => (
-                    <p>{item}</p>
+                    <p key={item}>{item}</p>
                 ))
             }
         </div>
