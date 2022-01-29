@@ -104,14 +104,8 @@ export default function Card(){
         setIsLocationModalVisible(!isLocationModalVisible)
     }
 
-    let documentHeight = "100vh"
-
-    if(process.browser){
-        documentHeight = innerHeight + "px"
-    }
-
     return(
-        <Styles documentHeight={documentHeight}>
+        <Styles>
             <MakeByToast/>
             {isModalVisible && <Modal/>}
             {isPhoneModalVisible && <PhoneModal/>}
