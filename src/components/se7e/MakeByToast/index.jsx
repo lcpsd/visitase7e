@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { toast, ToastContainer } from "react-toastify"
+import { Slide, toast, ToastContainer } from "react-toastify"
 import styles from './styles.module.scss'
 
 export function MakeByToast(){
@@ -15,7 +15,8 @@ export function MakeByToast(){
             pauseOnHover: true,
             draggable: true,
             theme: "dark",
-            className: styles.makeByToast
+            className: styles.makeByToast,
+            transition: Slide
         }))()
     })
     return(
