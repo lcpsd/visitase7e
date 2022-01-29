@@ -7,12 +7,11 @@ export function MakeByToast(){
         ( () => toast(
         <>
             <p>Desenvolvido Pela Se7e</p>
-            <a href="www.visitase7e.com">Clique e saiba mais</a>
+            <a href="http://www.visitase7e.com/">Clique e saiba mais</a>
         </>, {
             position: "top-right",
             autoClose: 3000,
             hideProgressBar: true,
-            closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             theme: "dark",
