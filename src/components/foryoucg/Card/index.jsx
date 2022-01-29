@@ -107,6 +107,7 @@ export default function Card(){
     return(
         <Styles>
             <MakeByToast/>
+            
             {isModalVisible && <Modal/>}
             {isPhoneModalVisible && <PhoneModal/>}
             {isLocationModalVisible && 
