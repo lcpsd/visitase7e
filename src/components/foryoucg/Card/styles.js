@@ -31,13 +31,14 @@ const styles = styled.div`
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     
     .container{
         height: 90%;
         width: 100%;
         max-width: 400px;
+
         padding-top: 1rem;
         
         display: flex;
