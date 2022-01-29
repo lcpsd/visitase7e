@@ -1,5 +1,4 @@
 import Document from 'next/document'
-import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 
 import { ServerStyleSheet } from 'styled-components'
@@ -21,7 +20,6 @@ export default class MyDocument extends Document {
           <>
             {initialProps.styles}
             {sheet.getStyleElement()}
-            <Head>
               <NextSeo 
               title='Se7e | Estúdio de Design'
               description='Estúdio de design focado em solução.'
@@ -31,7 +29,6 @@ export default class MyDocument extends Document {
                 href: '/favicon.ico'
               }]}
               />
-            </Head>
           </>
         ),
       }
