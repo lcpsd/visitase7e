@@ -13,6 +13,7 @@ import { useModalContext } from '../context/ModalContext'
 import Modal from '../modal'
 import PhoneModal from '../PhoneModal'
 import LocationModal from '../LocationModal'
+import { MakeByToast } from '../../se7e/MakeByToast'
 
 export default function Card(){
 
@@ -111,7 +112,7 @@ export default function Card(){
 
     return(
         <Styles documentHeight={documentHeight}>
-
+            <MakeByToast/>
             {isModalVisible && <Modal/>}
             {isPhoneModalVisible && <PhoneModal/>}
             {isLocationModalVisible && 

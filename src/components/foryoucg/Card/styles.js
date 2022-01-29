@@ -24,6 +24,7 @@ const styles = styled.div`
         z-index: -1;
     }
 
+
     background: var(--foryou-green-400);
     height: 100vh;
     width: 100vw;

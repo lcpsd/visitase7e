@@ -1,0 +1,17 @@
+.makeByToast{
+    
+    text-align: center;
+    
+    p{
+        color: var(--purple-100);
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: inherit;
+    }
+
+    a{
+        font-size: 0.8rem;
+        text-align: center;
+        width: 100%;
+    }
+}
