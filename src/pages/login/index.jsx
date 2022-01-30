@@ -9,8 +9,6 @@ export default function Login(){
 
     useEffect(() => {
 
-        console.log(session)
-
         if(session){
             router.push('/dashboard')
         }
