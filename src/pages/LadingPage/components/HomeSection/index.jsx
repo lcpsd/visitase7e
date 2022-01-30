@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export default function HomeSection(){
 
     function handleRegisterWaitList(){
-        
+
     }
 
     return(
@@ -35,6 +35,9 @@ export default function HomeSection(){
                                 <button>Cadastrar</button>
                             </Link>
                         </div>
+
+                        <p>Ou confira o plano <a href="#plansSection">custom</a></p>
+
                     </div>
                 </div>
 

@@ -38,6 +38,7 @@
         max-width: 1120px;
 
         display: flex;
+        justify-content: center;
 
         .text{
             flex: 1;
@@ -45,6 +46,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            max-width: 630px;
 
             gap: 2rem;
 
@@ -93,10 +95,18 @@
                 p{
                     font-size: 0.8rem;
                     margin: 0;
+
+                    a{
+                        color: var(--purple-100);
+                        font-weight: 500;
+                    }
                 }
 
                 div{
+                    display: flex;
+
                     input{
+                        width: 100%;
                         flex: 3;
                         padding: 0.5rem;
                         
@@ -109,7 +119,6 @@
                         flex: 1;
     
                         padding: 0.5rem;
-                        width: 100px;
                         background: var(--purple-100);
                         
                         border-radius: 0 0.3rem 0.3rem 0;
