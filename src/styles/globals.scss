@@ -30,6 +30,10 @@ button{
   user-select: none;
 
   border: 0;
+
+  &:hover{
+    filter: opacity(0.8)
+  }
 }
 
 /* width */
