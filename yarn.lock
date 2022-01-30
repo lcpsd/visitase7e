@@ -1245,6 +1245,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.5:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 clsx@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
@@ -1372,6 +1377,11 @@ core-util-is@~1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
   integrity sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==
+
+country-flag-icons@^1.0.2:
+  version "1.4.20"
+  resolved "https://registry.yarnpkg.com/country-flag-icons/-/country-flag-icons-1.4.20.tgz#6676e68ad62dab4c0dcaa09f900f163609b32b92"
+  integrity sha512-f9/cO9IEDIkLdOQeTUMDLEWMcDk4qbTRjbQLpy5pm+yil7Fa7QkKxgiMOQ2z1+Jht8/BAD3JJAmPG4qtK/tbUw==
 
 craco@^0.0.3:
   version "0.0.3"
@@ -2421,6 +2431,13 @@ inherits@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+
+input-format@^0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/input-format/-/input-format-0.3.7.tgz#08d63fc629985d604d1910e1d1a220b7a521bdc3"
+  integrity sha512-hgwiCjV7MnhFvX4Hwrvk7hB2a2rcB2CQb7Ex7GlK1ISbEXuLtflwBUnadFSA1rVNDPFh9yWBaJJ4/o1XkzhPIg==
+  dependencies:
+    prop-types "^15.7.2"
 
 internal-slot@^1.0.3:
   version "1.0.3"
@@ -3645,6 +3662,17 @@ react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-phone-number-input@^3.1.45:
+  version "3.1.45"
+  resolved "https://registry.yarnpkg.com/react-phone-number-input/-/react-phone-number-input-3.1.45.tgz#3ef3a409ddb0cddabe81419aeaa6c7ea3bde8f32"
+  integrity sha512-4rkoTqzp0RvhKR03CApO5obOKxKJrg2uMEWg1ayMoqLF4zg1XFAzfrfkaRZOfUD09Vrod1l7Mzgs8If8ilWCuw==
+  dependencies:
+    classnames "^2.2.5"
+    country-flag-icons "^1.0.2"
+    input-format "^0.3.7"
+    libphonenumber-js "^1.9.46"
+    prop-types "^15.7.2"
 
 react-refresh@0.8.3:
   version "0.8.3"

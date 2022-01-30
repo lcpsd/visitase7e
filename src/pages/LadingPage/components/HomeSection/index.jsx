@@ -1,18 +1,19 @@
 import axios from 'axios'
 import Link from 'next/link'
 import { useState } from 'react'
+import PhoneInput from 'react-phone-number-input'
 import { toast, ToastContainer } from 'react-toastify'
-import styles from './styles.module.scss'
+import Styles from './styles.js'
 
 export default function HomeSection(){
 
     const [phoneWaiting, setPhoneWaiting] = useState("")
     const [nameWaiting, setNameWaiting] = useState("")
 
-
     async function handleRegisterWaitList(){
 
-        if((phoneWaiting || nameWaiting) === ""){
+        // Check empity fields
+        if(!phoneWaiting || !nameWaiting){
             (() => toast.warning("Preencha nome e telefone!", {
                 theme: "dark",
                 autoClose: 3000,
@@ -23,30 +24,39 @@ export default function HomeSection(){
             return
         }
 
+        // Request register 
         await axios.post("/api/waitinglist", {
             name: nameWaiting,
             phone: phoneWaiting
-        }).then(() => toast("Cadastrado com sucesso.", {
-            theme: "dark",
-            autoClose: 3000,
-            hideProgressBar: true
-        }))
-        
-    }
+        }).then(response => {
 
-    function handlePhoneNumberInput(value){
+            if(response.status !== 200){
+                toast.error("Ocorreu um erro!", {
+                    theme: "dark",
+                    autoClose: 3000,
+                    hideProgressBar: true
+                })
 
+                return
+            }
+
+            toast.success("Cadastrado com sucesso.", {
+                theme: "dark",
+                autoClose: 3000,
+                hideProgressBar: true
+            })
+        })        
     }
 
     return(
-        <section className={styles.homeSection} id='homeSection'>
+        <Styles className="homeSection" id='homeSection'>
             <ToastContainer/>
-            <div className={styles.container}>
-                <div className={styles.text}>
-                    <div className={styles.header}>
+            <div className="container">
+                <div className="text">
+                    <div className="header">
                         <h1>
-                            una o <span className={styles.textSerif}>passado </span>
-                            ao <span className={styles.textDisplay}>futuro</span>
+                            una o <span className="textSerif">passado </span>
+                            ao <span className="textDisplay">futuro</span>
                         </h1>
 
                         <p>
@@ -58,22 +68,26 @@ export default function HomeSection(){
                         <button>entrar</button>
                     </Link> */}
                     
-                    <div className={styles.waitingList}>
+                    <div className="waitingList">
                         <p>Cadastre-se na lista de espera</p>
                         <div>
 
-                            <div className={styles.inputs}>
+                            <div className="inputs">
                                 <input
                                 placeholder='Nome'
+                                type="text"
                                 value={nameWaiting}
                                 onChange={(e) => setNameWaiting(e.target.value)}
                                 />
 
-                                <input type="tel"
+                                <PhoneInput
                                 placeholder='Whatsapp'
-                                pattern='([1-9]{2})[0-9]{5}-[0-9]{4}'
                                 value={phoneWaiting}
-                                onChange={(e) => handlePhoneNumberInput(e.target.value)}
+                                onChange={setPhoneWaiting}
+                                country="BR"
+                                maxLength="15"
+                                defaultCountry="BR"
+                                className="phoneInput"
                                 />
                             </div>
 
@@ -85,10 +99,10 @@ export default function HomeSection(){
                     </div>
                 </div>
 
-                <div className={styles.smartphone}>
+                <div className="smartphone">
                     <img src="/image/smartphone.png" alt="smartphone" />
                 </div>
             </div>
-        </section>
+        </Styles>
     )
 }

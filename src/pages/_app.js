@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'react-toastify/dist/ReactToastify.css';
+import 'react-phone-number-input/style.css'
 
 import { SessionProvider } from "next-auth/react"
 

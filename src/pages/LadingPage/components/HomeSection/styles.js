@@ -1,4 +1,6 @@
-.homeSection{
+import styled from "styled-components";
+
+const styles = styled.section`
     margin-top: 80px;
 
     background: var(--blue-gray-950);
@@ -119,10 +121,22 @@
                             color: #fff;
 
                             border-bottom: 1px solid var(--purple-100);
+                            
+                            :focus{
+                                outline: 0;
+                            }
                         }
 
                         & :first-child{                            
                             border-right: 1px solid var(--purple-100);
+                        }
+
+                        .phoneInput{
+                            flex: 4;
+
+                            .PhoneInputCountry{
+                                display: none;
+                            }
                         }
 
                     }
@@ -158,11 +172,11 @@
 }
 
 @media(min-width: 1024px){
-    .homeSection{
-        .container{
-            .smartphone{
-                display: block;
-            }
+    .container{
+        .smartphone{
+            display: block;
         }
     }
-}
+`
+
+export default styles
