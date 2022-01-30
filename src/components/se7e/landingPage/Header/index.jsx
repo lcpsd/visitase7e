@@ -20,18 +20,20 @@ export default function Header(){
             })
         }
         
+        // checks current menu while scrolling
+        const allSections = document.querySelectorAll('section')
+
         window.onscroll = () => {
 
-            const allSections = document.querySelectorAll('section')
-    
             allSections.forEach(section => {
     
                 const sectionOffsetTop = section.offsetTop
-                const windowOffsetTop = window.scrollY
+                const sectionOffsetBottom = sectionOffsetTop + section.offsetHeight
+                const windowOffsetTop = window.scrollY + 80
 
-                if(sectionOffsetTop <= (windowOffsetTop + 200)){
-                    setCurrentMenu(section.id)
-                }                
+                if(sectionOffsetBottom >= windowOffsetTop && sectionOffsetTop <= windowOffsetTop){
+                    currentMenu !== section.id && section.id && setCurrentMenu(section.id)
+                }   
             })        
         }
     }
