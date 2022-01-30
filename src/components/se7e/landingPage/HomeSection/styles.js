@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 const styles = styled.section`
-    margin-top: 80px;
 
     background: var(--blue-gray-950);
 
     height: calc(100vh - 80px);
     width: 100%;
 
-    padding: 1.5rem;
+    padding: 0 1.5rem;
 
     color: #fff;
 
@@ -36,13 +35,19 @@ const styles = styled.section`
     .container{
         margin: 0 auto;
 
+        margin-top: 2rem;
+
         width: 100%;
         max-width: 1120px;
 
         display: flex;
         justify-content: center;
+        flex-direction: column;
+
+        gap: 1rem;
 
         .text{
+            order: 2;
             flex: 1;
             display: flex;
             align-items: center;
@@ -121,6 +126,8 @@ const styles = styled.section`
                             color: #fff;
 
                             border-bottom: 1px solid var(--purple-100);
+
+                            font-size: 1rem;
                             
                             :focus{
                                 outline: 0;
@@ -159,9 +166,8 @@ const styles = styled.section`
         }
 
         .smartphone{
-            display: none;
             flex: 2;
-
+            order: 1;
             img{
                 width: 100%;
                 height: auto;
@@ -171,10 +177,16 @@ const styles = styled.section`
     }
 }
 
-@media(min-width: 1024px){
+@media(min-width: 768px){
     .container{
+        margin-top: 80px;
+        flex-direction: row;
+        .text{
+            order: 1;
+        }
         .smartphone{
-            display: block;
+            flex: 2;
+            order: 2;
         }
     }
 `
