@@ -6,7 +6,7 @@ export default function Index(){
 
     return(
         <ModalContextProvider>
-            <NextSeo title="Clínica Foryou (Campo Grande)"/>
+            <NextSeo title="Clínica ForYou (Campo Grande)"/>
             <Card/>
         </ModalContextProvider>
     )

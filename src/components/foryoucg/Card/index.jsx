@@ -1,4 +1,5 @@
 import Styles from './styles'
+import GlobalStyles from './GlobalStyles'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { A11y, Navigation, Pagination } from 'swiper'
 
@@ -105,89 +106,94 @@ export default function Card(){
     }
 
     return(
-        <Styles>
-            <MakeByToast/>
-            
-            {isModalVisible && <Modal/>}
-            {isPhoneModalVisible && <PhoneModal/>}
-            {isLocationModalVisible && 
-            <LocationModal 
-            location={"https://www.google.com/maps/place/Cl%C3%ADnica+For+You+Est%C3%A9tica+%26+SPA+DAY/@-20.4502477,-54.5929753,21z/data=!4m5!3m4!1s0x9486e9f92b153217:0x462abda96756719a!8m2!3d-20.4502534!4d-54.5929533"}/>
-            }
 
-            <video autoPlay muted loop className="videoBackground">
-                <source src='/foryou/video/BG01.mp4' type='video/mp4'/>
-            </video>
+        <>
+            <GlobalStyles/>
+            <Styles>
+                <MakeByToast/>
 
-            <div className="container">
-                <img src="/foryou/image/logo.jpg" alt="" className="logo" />
+                {/* Modals */}
+                {isModalVisible && <Modal/>}
+                {isPhoneModalVisible && <PhoneModal/>}
+                {isLocationModalVisible && 
+                <LocationModal 
+                location={"https://www.google.com/maps/place/Cl%C3%ADnica+For+You+Est%C3%A9tica+%26+SPA+DAY/@-20.4502477,-54.5929753,21z/data=!4m5!3m4!1s0x9486e9f92b153217:0x462abda96756719a!8m2!3d-20.4502534!4d-54.5929533"}/>
+                }
 
-                <Swiper
-                modules={[Pagination, A11y]}
-                slidesPerView={1}
-                spaceBetween={10}
-                pagination={{ clickable: true }}
-                className="cards">
+                <video autoPlay muted loop className="videoBackground">
+                    <source src='/foryou/video/BG01.mp4' type='video/mp4'/>
+                </video>
 
-                    {
-                        allServices.map(({title, image_link, id}) => (
-                            <SwiperSlide key={id}>
-                                <img src={image_link} alt={title} />
-                                <div>
-                                    {title}
-                                </div>
-                            </SwiperSlide>
-                        ))
-                    }
+                <div className="container">
+                    <img src="/foryou/image/logo.jpg" alt="" className="logo" />
 
-                    <SwiperSlide id='final'>
-                        <div className='final'>
-                            E muito mais! <br />
-                            Entre em contato.
-                        </div>
-                    </SwiperSlide>
+                    <Swiper
+                    modules={[Pagination, A11y]}
+                    slidesPerView={1}
+                    spaceBetween={10}
+                    pagination={{ clickable: true }}
+                    className="cards">
 
-                </Swiper>
+                        {
+                            allServices.map(({title, image_link, id}) => (
+                                <SwiperSlide key={id}>
+                                    <img src={image_link} alt={title} />
+                                    <div>
+                                        {title}
+                                    </div>
+                                </SwiperSlide>
+                            ))
+                        }
 
-                <Swiper
-                modules={[Navigation, A11y]}
-                slidesPerView={4}
-                navigation
-                className="social">
-                    <SwiperSlide>
-                        <a href='#' onClick={() => setIsPhoneModalVisible(!isPhoneModalVisible)}>
-                            <AiOutlinePhone/>
-                        </a>
-                    </SwiperSlide>
+                        <SwiperSlide id='final'>
+                            <div className='final'>
+                                E muito mais! <br />
+                                Entre em contato.
+                            </div>
+                        </SwiperSlide>
 
-                    <SwiperSlide>
-                        <a href='mailto:clinicaforyou.cg@gmail.com' target="_blank" rel="noreferrer">
-                            <AiOutlineMail/>
-                        </a>
-                    </SwiperSlide>
+                    </Swiper>
 
-                    <SwiperSlide>
-                        <a href='https://instagram.com/clinicaforyou.cg' target="_blank" rel="noreferrer">
-                            <AiOutlineInstagram/>
-                        </a>
-                    </SwiperSlide>
+                    <Swiper
+                    modules={[Navigation, A11y]}
+                    slidesPerView={4}
+                    navigation
+                    className="social">
+                        <SwiperSlide>
+                            <a href='#' onClick={() => setIsPhoneModalVisible(!isPhoneModalVisible)}>
+                                <AiOutlinePhone/>
+                            </a>
+                        </SwiperSlide>
 
-                    <SwiperSlide>
-                        <a onClick={handleClockModal}>
-                            <AiOutlineClockCircle/>
-                        </a>
-                        
-                    </SwiperSlide>
+                        <SwiperSlide>
+                            <a href='mailto:clinicaforyou.cg@gmail.com' target="_blank" rel="noreferrer">
+                                <AiOutlineMail/>
+                            </a>
+                        </SwiperSlide>
 
-                    <SwiperSlide>
-                        <a onClick={handleLocationModal}>
-                            <GoLocation/>
-                        </a>
-                        
-                    </SwiperSlide>
+                        <SwiperSlide>
+                            <a href='https://instagram.com/clinicaforyou.cg' target="_blank" rel="noreferrer">
+                                <AiOutlineInstagram/>
+                            </a>
+                        </SwiperSlide>
 
-                </Swiper>
-            </div>
-        </Styles>
+                        <SwiperSlide>
+                            <a onClick={handleClockModal}>
+                                <AiOutlineClockCircle/>
+                            </a>
+                            
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <a onClick={handleLocationModal}>
+                                <GoLocation/>
+                            </a>
+                            
+                        </SwiperSlide>
+
+                    </Swiper>
+                </div>
+            </Styles>
+        </>
     )
 }
