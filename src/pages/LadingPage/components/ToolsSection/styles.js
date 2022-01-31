@@ -3,7 +3,7 @@ import styled from "styled-components"
 const styles = styled.section`
     background: var(--blue-gray-950);
 
-    height: 100%;
+    height: calc(100vh - var(--header-height));
     width: 100%;
 
     padding: 1.5rem;

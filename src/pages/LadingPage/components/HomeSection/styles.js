@@ -4,7 +4,7 @@ const styles = styled.section`
 
     background: var(--blue-gray-950);
 
-    height: 100%;
+    height: 100vh;
     width: 100%;
 
     padding: 0 1.5rem;
