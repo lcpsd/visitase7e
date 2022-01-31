@@ -34,31 +34,18 @@ const styles = styled.section`
                 }
             }
 
-            .cardDiv{
-                height: 100%;
+                .cardDiv{
+                    height: 100%;
 
-                padding-bottom: 4rem;
+                    padding-bottom: 4rem;
 
-                margin: 0 auto;
-                
-                display: flex;
-                justify-content: center;
-            }
+                    margin: 0 auto;
+                    
+                    display: flex;
+                    justify-content: center;
+                }
 
-            }
-
-            /* divisor */
-            &::after{
-            content: '';
-            position: absolute;
-            margin: 0 auto;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 80%;
-            height: 1px;
-            background: var(--blue-gray-750);
-            }
+        }
 
             >p{
             text-transform: uppercase;

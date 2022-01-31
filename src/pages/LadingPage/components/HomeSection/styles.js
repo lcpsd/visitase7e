@@ -4,7 +4,7 @@ const styles = styled.section`
 
     background: var(--blue-gray-950);
 
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     padding: 0 1.5rem;
@@ -20,22 +20,12 @@ const styles = styled.section`
     gap: 1rem;
 
     // divisor
-    &::after{
-        content: '';
-        position: absolute;
-        margin: 0 auto;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 80%;
-        height: 1px;
-        background: var(--blue-gray-750);
-    }
-
+    
     .container{
+        
         margin: 0 auto;
-
-        margin-top: 2rem;
+        
+        margin-top: 80px;
 
         width: 100%;
         max-width: 1120px;
@@ -177,7 +167,7 @@ const styles = styled.section`
     }
 }
 
-@media(min-width: 768px){
+@media(min-width: 1024px){
     .container{
         margin-top: 80px;
         flex-direction: row;
