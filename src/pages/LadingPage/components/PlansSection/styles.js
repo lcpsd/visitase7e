@@ -73,6 +73,15 @@ const styles = styled.section`
 
             &.shadowBox{
                 box-shadow: 0px 0px 30px 0px var(--purple-100);
+
+                .text{
+                    span{
+                        p{
+                            font-weight: normal;
+                            color: #fff;
+                        }
+                    }
+                }
             }
 
             &.filled{
@@ -171,19 +180,22 @@ const styles = styled.section`
                 }
             }
 
-            button{
-                background: var(--purple-100);
-                padding: 0.5rem;
+            a{
                 width: 100%;
-                
-                font-weight: bold;
+                    button{
+                    background: var(--purple-100);
+                    padding: 0.5rem;
+                    width: 100%;
+                    
+                    font-weight: bold;
 
-                border-radius: 0 0 0.2rem 0.2rem;
+                    border-radius: 0 0 0.2rem 0.2rem;
 
-                &.outlined{
-                    background: var(--blue-gray-950);
-                    color: var(--purple-100);
-                }
+                    &.outlined{
+                        background: var(--blue-gray-950);
+                        color: var(--purple-100);
+                    }
+            }
             }
         }
     }

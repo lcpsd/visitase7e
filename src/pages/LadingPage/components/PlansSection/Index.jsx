@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Styles from './styles'
 // import Swiper core and required modules
 import { Pagination, Scrollbar, A11y } from 'swiper';
@@ -43,9 +42,9 @@ export default function PlansSection(){
                                 </span>
                             </div>
 
-                            <Link href={"#"}>
+                            <a href={"#"}>
                                 <button>EM BREVE</button>
-                            </Link>
+                            </a>
                         </div>
                     </SwiperSlide>
 
@@ -71,9 +70,9 @@ export default function PlansSection(){
                                 </span>
                             </div>
 
-                            <Link href={"#"}>
+                            <a href={"#"}>
                                 <button className='outlined'>EM BREVE</button>
-                            </Link>
+                            </a>
                         </div>
                     </SwiperSlide>
 
@@ -90,12 +89,15 @@ export default function PlansSection(){
 
                                 <span>
                                     R$50,00/Mês
+                                    <p>
+                                        Acompanha display de acrílico com NFC + 2 cartões de visita NFC
+                                    </p>
                                 </span>
                             </div>
 
-                            <Link href={"https://api.whatsapp.com/send?phone=5567996641461"}>
-                                <button>Peça Agora</button>
-                            </Link>
+                            <a href={"https://api.whatsapp.com/send?phone=5567996641461"} target="_blank" rel='noreferrer'>
+                                <button>PEDIR AGORA</button>
+                            </a>
                         </div>
                     </SwiperSlide>
 
