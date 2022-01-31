@@ -5,6 +5,7 @@ import  ToolsSection  from './components/ToolsSection'
 import  QAsection  from './components/QAsection'
 import  ContactSection  from './components/ContactSection'
 import  Goback  from './components/GoBack'
+import Footer from './components/Footer/Index'
 
 export default function LandingPage(){
 
@@ -16,6 +17,7 @@ export default function LandingPage(){
             <ToolsSection/>
             <QAsection/>
             <ContactSection/>
+            <Footer/>
             <Goback/>
         </>
     )
