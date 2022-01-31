@@ -14,14 +14,14 @@ export default function QAsection(){
         },
         {
             title: "Quantos cartões posso ter?",
-            text: "Quantos forem necessário, não há cobrança adicional por cartão."
+            text: "Você poderá ter até 3 cartões por conta."
         },
         {
             title: "Existe algum custo extra?",
             text: "Não, uma vez que o pacote é pago, nenhuma cobrança adicional sobre o serviço será feita."
         },
         {
-            title: "e se eu não pagar?",
+            title: "E se eu não pagar?",
             text: "Seu cartão ficará inativo até que o pagamento seja efetuado."
         },
         {
