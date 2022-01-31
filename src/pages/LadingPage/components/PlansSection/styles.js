@@ -41,11 +41,16 @@ const styles = styled.section`
         .swiper{
             width: 100%;
             padding: 2rem 1rem;
-            
+
             .swiper-pagination-bullet{
                 margin-top: 1rem;
                 background: var(--purple-100);
             }
+
+            .swiper-wrapper{
+                justify-content: flex-start;
+            }
+            
         }
 
         .planCard{

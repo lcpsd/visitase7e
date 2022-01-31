@@ -23,7 +23,6 @@ export default function PlansSection(){
                     768: {
                       width: 768,
                       slidesPerView: 2,
-                      modules:[]
                     },
                   }}
                 pagination={{ clickable: true }}
