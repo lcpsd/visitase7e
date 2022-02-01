@@ -9,8 +9,6 @@ const Styles = styled.div`
 
     gap: 0.5rem;
 
-    margin-top: 0.5rem;
-
     span{
         display: inline-block;
 
