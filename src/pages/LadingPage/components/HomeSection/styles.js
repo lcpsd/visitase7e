@@ -4,10 +4,8 @@ const styles = styled.section`
 
     background: var(--blue-gray-950);
 
-    height: 100%;
+    height: 100vh;
     width: 100%;
-
-    padding: 1.5rem;
 
     color: #fff;
 
@@ -25,7 +23,7 @@ const styles = styled.section`
         
         margin: 0 auto;
         
-        margin-top: 80px;
+        padding: 1.5rem;
 
         width: 100%;
         max-width: 1120px;
