@@ -14,7 +14,11 @@ export default function QAsection(){
         },
         {
             title: "Quantos cartões posso ter?",
-            text: "Você poderá ter até 3 cartões por conta."
+            text: "Você poderá ter até 3 cartões por conta no plano light ou full."
+        },
+        {
+            title: "O plano custom possuí painel administrativo?",
+            text: "Não, por se tratar de um cartão altamente customizado, ainda não possuímos a capacidade de fornecer um painel administrativo para os mesmos, sendo preciso entrar em contato para que façamos a atualização dos dados."
         },
         {
             title: "Existe algum custo extra?",
