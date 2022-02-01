@@ -65,7 +65,7 @@ const styles = styled.section`
 
             width: 200px;
 
-            height: 100%;
+            height: 400px;
 
             margin: 0 auto;
 
@@ -200,17 +200,19 @@ const styles = styled.section`
         }
     }
 
-    @media (min-width: 768px){
+    @media (min-width: 1024px){
         .swiper{
-            width: 100%;
             padding: 2rem 1rem;
 
+            
             .swiper-wrapper{
+                background: red;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: center !important;
 
                 margin: 0 auto;
+
             }
         }
     }
