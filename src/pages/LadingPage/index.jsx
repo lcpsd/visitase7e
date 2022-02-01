@@ -5,7 +5,7 @@ import PlansSection from '/src/components/landingPage/PlansSection'
 import QAsection from '/src/components/landingPage/QAsection'
 import ContactSection from '/src/components/landingPage/ContactSection'
 import Footer from '/src/components/landingPage/Footer'
-import Goback from '/src/components/landingPage/Goback'
+import GoBack from '/src/components/landingPage/GoBack'
 
 export default function LandingPage(){
 
@@ -18,7 +18,7 @@ export default function LandingPage(){
             <QAsection/>
             <ContactSection/>
             <Footer/>
-            <Goback/>
+            <GoBack/>
         </>
     )
 }
