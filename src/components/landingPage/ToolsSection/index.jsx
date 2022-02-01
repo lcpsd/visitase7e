@@ -75,7 +75,7 @@ export default function ToolsSection(){
                     <Swiper
                     spaceBetween={50}
                     slidesPerView={1}
-                    modules={[Pagination, Scrollbar, A11y]}
+                    modules={[Pagination, A11y]}
                     pagination={{ clickable: true }}
                     breakpoints={{
                         768: {

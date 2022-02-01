@@ -26,7 +26,7 @@ const styles = styled.section`
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
+        
         p{
             text-transform: uppercase;
             font-size: 2rem;
@@ -66,7 +66,7 @@ const styles = styled.section`
 
             width: 200px;
 
-            height: 350px;
+            height: 400px;
 
             margin: 0 auto;
 
@@ -140,8 +140,8 @@ const styles = styled.section`
 
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                
+                justify-content: space-evenly;
+
                 h4{
                     font-size: 1.5rem;
                     text-transform: uppercase;
@@ -150,23 +150,31 @@ const styles = styled.section`
                     line-height: 0;
                     
                     text-align: center;
-                }
 
-                p{
+                }
+                
+                >p{
                     font-size: 0.8rem;
                     line-height: 1.2rem;
                     text-align: center;
                     font-weight: 400;
                     text-transform: initial;
-                    
                 }
-
+                
                 span{
+                    height: 100px;
+                    
                     color: var(--purple-100);
+
                     font-size: 1.3rem;
                     font-weight: 500;
 
-                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    line-height: 0.5rem;
 
                     p{
                         color: var(--purple-100);
@@ -176,6 +184,12 @@ const styles = styled.section`
                         line-height: 0.8rem;
 
                         font-weight: 600;
+
+                        text-transform: initial;
+
+                        display: flex;
+                        align-items: flex-end;
+
                     }
                 }
             }

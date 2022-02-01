@@ -3,8 +3,6 @@ import styles from './styles.module.scss'
 
 export default function ToolCard({title, text, badges}){
 
-    console.log(badges)
-
     return(
         <div className={styles.card}>
             <h4>
