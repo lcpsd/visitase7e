@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const styles = styled.section`
     background: var(--blue-gray-950);
 
-    height: 100%;
+    height: 100vh;
     width: 100%;
 
     padding: 1.5rem;
@@ -55,6 +55,7 @@ const styles = styled.section`
 
         .planCard{
             background: var(--blue-gray-950);
+
             border: 1px solid var(--purple-100);
             border-radius: 0.3rem;
 
@@ -65,7 +66,7 @@ const styles = styled.section`
 
             width: 200px;
 
-            height: 450px;
+            height: 350px;
 
             margin: 0 auto;
 
@@ -141,13 +142,12 @@ const styles = styled.section`
                 flex-direction: column;
                 justify-content: center;
                 
-                gap: 1rem;
-
                 h4{
                     font-size: 1.5rem;
                     text-transform: uppercase;
                     font-weight: 600;
                     color: var(--purple-100);
+                    line-height: 0;
                     
                     text-align: center;
                 }
