@@ -1,11 +1,11 @@
-import Header from './components/Header'
-import HomeSection  from './components/HomeSection'
-import PlansSection  from './components/PlansSection'
-import ToolsSection  from './components/ToolsSection'
-import QAsection  from './components/QAsection'
-import ContactSection  from './components/ContactSection'
-import Goback  from './components/GoBack'
-import Footer from './components/Footer'
+import Header from '/src/components/se7e/landingPage/Header'
+import HomeSection from '/src/components/se7e/landingPage/HomeSection'
+import ToolsSection from '/src/components/se7e/landingPage/ToolsSection'
+import PlansSection from '/src/components/se7e/landingPage/PlansSection'
+import QAsection from '/src/components/se7e/landingPage/QAsection'
+import ContactSection from '/src/components/se7e/landingPage/ContactSection'
+import Footer from '/src/components/se7e/landingPage/Footer'
+import Goback from '/src/components/se7e/landingPage/Goback'
 
 export default function LandingPage(){
 
