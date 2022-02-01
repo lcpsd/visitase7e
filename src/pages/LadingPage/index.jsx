@@ -13,8 +13,8 @@ export default function LandingPage(){
         <>
             <Header />
             <HomeSection/>
-            <PlansSection/>
             <ToolsSection/>
+            <PlansSection/>
             <QAsection/>
             <ContactSection/>
             <Footer/>

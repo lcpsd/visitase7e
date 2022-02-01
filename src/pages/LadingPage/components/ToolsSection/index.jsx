@@ -26,7 +26,14 @@ export default function ToolsSection(){
             title: "Mostre Serviço",
             text: "Deixe amostra todos os produtos e serviços oferecidos, modificando sempre que necessário."
         },
-        
+        {
+            title: "Do seu jeito",
+            text: "Com o plano custom você deixa o cartão com a sua cara e traga a originalidade que seus concorrentes não possuem."
+        },
+        {
+            title: "Tecnologia",
+            text: "No plano custom fornecemos 1 display de acrílico NFC e 2 cartões digitais grátis, e eles são seus após 6 meses de assinatura ativa."
+        },
     ]
 
     return(
