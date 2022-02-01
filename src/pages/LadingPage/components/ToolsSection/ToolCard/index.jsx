@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-export default function ToolCard({title, text}){
+export default function ToolCard({title, text, comment}){
 
     return(
         <div className={styles.card}>
@@ -8,8 +8,12 @@ export default function ToolCard({title, text}){
                 {title}
             </h4>
 
-            <p>
+            <p className={styles.text}>
                 {text}
+            </p>
+
+            <p className={styles.comment}>
+                {comment}
             </p>
         </div>
     )
