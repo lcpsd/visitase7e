@@ -11,7 +11,7 @@ export default function Header(){
     if(typeof window !== 'undefined'){
 
         if(screen.width <= 768){
-            const allMenus = document.querySelectorAll("li")
+            const allMenus = document.querySelectorAll("#header li")
 
             allMenus.forEach(item => {
                 item.addEventListener("click", () => {
