@@ -61,14 +61,14 @@ export default function Header(){
                         início</a>
                     </li>
                     <li>
-                        <a href="#plansSection" 
-                        className={currentMenu == "plansSection" ? styles.active : ""}>
-                        planos</a>
-                    </li>
-                    <li>
                         <a href="#toolsSection" 
                         className={currentMenu == "toolsSection" ? styles.active : ""}>
                         ferramentas</a>
+                    </li>
+                    <li>
+                        <a href="#plansSection" 
+                        className={currentMenu == "plansSection" ? styles.active : ""}>
+                        planos</a>
                     </li>
                     <li>
                         <a href="#QAsection" 
