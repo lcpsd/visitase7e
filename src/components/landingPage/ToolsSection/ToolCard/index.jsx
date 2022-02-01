@@ -1,6 +1,9 @@
+import Badges from '/src/components/landingPage/Badges'
 import styles from './styles.module.scss'
 
-export default function ToolCard({title, text, comment}){
+export default function ToolCard({title, text, badges}){
+
+    console.log(badges)
 
     return(
         <div className={styles.card}>
@@ -12,9 +15,7 @@ export default function ToolCard({title, text, comment}){
                 {text}
             </p>
 
-            <p className={styles.comment}>
-                {comment}
-            </p>
+            <Badges badges={badges}/>
         </div>
     )
 }
