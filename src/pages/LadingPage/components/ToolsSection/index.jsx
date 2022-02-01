@@ -32,7 +32,7 @@ export default function ToolsSection(){
         },
         {
             title: "Tecnologia",
-            text: "No plano custom fornecemos 1 display de acrílico NFC e 2 cartões digitais grátis, e eles são seus após 6 meses de assinatura ativa."
+            text: "No plano custom fornecemos 1 display de acrílico NFC e 2 cartões NFC personalizados para o seu negócio gratuitamente, e eles são seus após 6 meses de assinatura ativa."
         },
     ]
 
