@@ -11,15 +11,15 @@ export default function Footer(){
             items: [
                 {
                     title: "Light",
-                    link: "#"
+                    link: "#plansSection"
                 },
                 {
                     title: "Full",
-                    link: "#"
+                    link: "#plansSection"
                 },
                 {
                     title: "Custom",
-                    link: "#"
+                    link: "#plansSection"
                 },
             ]
         },
