@@ -36,6 +36,18 @@ export default function QAsection(){
             title: "Posso alterar meu plano?",
             text: "Sim, seu plano poderá ser alterado a qualquer momento. Note que após o período de reembolso do plano anual, não haverá devolução do valor pela mudança de plano para o light (Plano mensal)."
         },
+        {
+            title: "O que é NFC?",
+            text: "NFC é uma tecnologia que permite a transferência de pequenas quantidades de dados através da aproximação. É a mesma tecnologia utilizada por cartões de crédito e débito para efetuar pagamentos em máquinas de cartão. Poranto, quando o cliente aproxima um celular que suporte esta tecnologia ao seu display de acrílico ou cartão, ele é levado automáticamente para o seu cartão digital."
+        },
+        {
+            title: "E se o celular não suportar NFC?",
+            text: "Na mesmo cartão e display onde está presente a tecnologia, disponibilizamos um qr-code para que aqueles que não tenham um celular com NFC, possam escanear e serem levados ao cartão digital."
+        },
+        {
+            title: "Posso regravar dados nos chips NFC?",
+            text: "Até que se complete 6 meses de assinatura, não é possível efetuar regravações nos chips fornecidos. Após 6 meses a regravação torna-se livre, pois até o fim deste prazo, os chips, cartões e displays de acrílico pertencem à se7e."
+        }
     ]
 
     return(
