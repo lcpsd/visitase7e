@@ -11,7 +11,7 @@ export default function PlansSection(){
         <Styles id='plansSection'>
             <div
             className={"container " + (currentMenu == 'plansSection' ? 'fadeIn' : "fadeOut")}>
-                <p>se
+                <p>seu
                     <br />
                     <span>plano</span>
                 </p>
