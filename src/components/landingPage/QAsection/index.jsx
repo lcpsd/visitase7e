@@ -1,6 +1,6 @@
 import CollapseCard from './CollapseCard'
 import Styles from './Styles'
-import {useHeaderContext} from '../../../contexts/landingPage/HeaderContext'
+import {useHeaderContext} from '../contexts/HeaderContext'
 
 export default function QAsection(){
 

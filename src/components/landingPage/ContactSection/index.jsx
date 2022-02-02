@@ -2,7 +2,7 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {RiWhatsappLine} from 'react-icons/ri'
 import {GrInstagram} from 'react-icons/gr'
 import Styles from './Styles'
-import {useHeaderContext} from '../../../contexts/landingPage/HeaderContext'
+import {useHeaderContext} from '../contexts/HeaderContext'
 
 export default function ContactSection(){
     

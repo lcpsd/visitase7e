@@ -4,7 +4,7 @@ import { useState } from 'react'
 import PhoneInput from 'react-phone-number-input'
 import { toast, ToastContainer } from 'react-toastify'
 import Styles from './styles.js'
-import {useHeaderContext} from '../../../contexts/landingPage/HeaderContext'
+import {useHeaderContext} from '../contexts/HeaderContext'
 
 export default function HomeSection(){
 

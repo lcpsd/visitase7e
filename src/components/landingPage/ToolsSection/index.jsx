@@ -1,8 +1,8 @@
-import { A11y, Pagination, Scrollbar } from 'swiper'
+import { A11y, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Styles from './styles'
 import ToolCard from './ToolCard'
-import {useHeaderContext} from '../../../contexts/landingPage/HeaderContext'
+import {useHeaderContext} from '../contexts/HeaderContext'
 
 export default function ToolsSection(){
 
