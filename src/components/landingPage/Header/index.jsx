@@ -2,11 +2,12 @@ import {VscMenu} from 'react-icons/vsc'
 import {IoMdClose} from 'react-icons/io'
 import styles from './styles.module.scss'
 import { useState } from 'react'
+import {useHeaderContext} from '/src/contexts/landingPage/HeaderContext'
 
 export default function Header(){
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const [currentMenu, setCurrentMenu] = useState("homeSection")
+    const {currentMenu, setCurrentMenu} = useHeaderContext()
     
     if(typeof window !== 'undefined'){
 

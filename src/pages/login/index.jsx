@@ -17,6 +17,8 @@ export default function Login(){
 
     return(
         <div>
+            <img src="/image/logo.png" alt="" />
+            <p>Visita Se7e</p>
             <button onClick={() => signIn()}>Login</button>
         </div>
     )
