@@ -2,7 +2,7 @@ import {VscMenu} from 'react-icons/vsc'
 import {IoMdClose} from 'react-icons/io'
 import styles from './styles.module.scss'
 import { useState } from 'react'
-import {useHeaderContext} from '/src/contexts/landingPage/HeaderContext'
+import {useHeaderContext} from '../../../contexts/landingPage/HeaderContext'
 
 export default function Header(){
 

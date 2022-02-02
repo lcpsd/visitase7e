@@ -2,7 +2,7 @@ import Styles from './styles'
 // import Swiper core and required modules
 import { Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { useHeaderContext } from '/src/contexts/landingPage/HeaderContext'
+import {useHeaderContext} from '../../../contexts/landingPage/HeaderContext'
 
 export default function PlansSection(){
     const {currentMenu} = useHeaderContext()

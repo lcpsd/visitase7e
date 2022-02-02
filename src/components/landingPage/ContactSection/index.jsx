@@ -1,19 +1,22 @@
 import {HiOutlineMail} from 'react-icons/hi'
 import {RiWhatsappLine} from 'react-icons/ri'
 import {GrInstagram} from 'react-icons/gr'
-import styles from './styles.module.scss'
+import Styles from './Styles'
+import {useHeaderContext} from '../../../contexts/landingPage/HeaderContext'
 
 export default function ContactSection(){
     
+    const {currentMenu} = useHeaderContext()
+
     return(
-        <section className={styles.contact} id='contactSection'>
-            <div className={styles.container}>
+        <Styles className="contact" id='contactSection'>
+            <div className={"container " + (currentMenu == 'contactSection' ? 'fadeIn' : "fadeOut")}>
                 <p>fale
                     <br />
                     <span>conosco</span>
                 </p>
 
-                <div className={styles.buttons}>
+                <div className="buttons">
                     <button>
                         <a href="mailto:se7eestudiodedesign@gmail.com">
                             <span>
@@ -42,6 +45,6 @@ export default function ContactSection(){
                     </button>
                 </div>
             </div>
-        </section>
+        </Styles>
     )
 }
