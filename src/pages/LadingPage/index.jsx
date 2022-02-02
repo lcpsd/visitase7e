@@ -6,7 +6,7 @@ import QAsection from '/src/components/landingPage/QAsection'
 import ContactSection from '/src/components/landingPage/ContactSection'
 import Footer from '/src/components/landingPage/Footer'
 import GoBack from '/src/components/landingPage/GoBack'
-import { HeaderContextProvider } from '../../Contexts/landingPage/HeaderContext'
+import { HeaderContextProvider } from '/src/contexts/landingPage/HeaderContext'
 
 export default function LandingPage(){
 

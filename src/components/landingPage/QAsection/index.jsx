@@ -1,7 +1,10 @@
 import CollapseCard from './CollapseCard'
-import styles from './styles.module.scss'
+import Styles from './Styles'
+import { useHeaderContext } from '/src/contexts/landingPage/HeaderContext'
 
 export default function QAsection(){
+
+    const {currentMenu} = useHeaderContext()
 
     const questions = [
         {
@@ -55,14 +58,14 @@ export default function QAsection(){
     ]
 
     return(
-        <section className={styles.qaSection} id='QAsection'>
-            <div className={styles.container}>
+        <Styles className="qaSection" id='QAsection'>
+            <div className={"container " + (currentMenu == 'QAsection' ? 'fadeIn' : "fadeOut")}>
                 <p>tire suas
                     <br />
                     <span>dúvidas</span>
                 </p>
 
-                <div className={styles.questions}>
+                <div className="questions">
                 {
                     questions.map((item, index) => (
                         <CollapseCard title={item.title} text={item.text} key={index}/>
@@ -70,6 +73,6 @@ export default function QAsection(){
                 }
                 </div>
             </div>
-        </section>
+        </Styles>
     )
 }

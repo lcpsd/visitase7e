@@ -4,11 +4,14 @@ import { useState } from 'react'
 import PhoneInput from 'react-phone-number-input'
 import { toast, ToastContainer } from 'react-toastify'
 import Styles from './styles.js'
+import { useHeaderContext } from '/src/contexts/landingPage/HeaderContext'
 
 export default function HomeSection(){
 
     const [phoneWaiting, setPhoneWaiting] = useState("")
     const [nameWaiting, setNameWaiting] = useState("")
+
+    const {currentMenu} = useHeaderContext()
 
     async function handleRegisterWaitList(){
 
@@ -51,7 +54,9 @@ export default function HomeSection(){
     return(
         <Styles className="homeSection" id='homeSection'>
             <ToastContainer/>
-            <div className="container">
+
+            <div className={"container " + (currentMenu == 'homeSection' ? 'fadeIn' : "fadeOut")}>
+
                 <div className="text">
                     <div className="header">
                         <h1>

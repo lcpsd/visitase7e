@@ -1,4 +1,6 @@
-.qaSection{
+import styled from "styled-components";
+
+const Styles = styled.section`
     background: var(--blue-gray-950);
 
     height: 100%;
@@ -15,10 +17,22 @@
     justify-content: center;
     align-items: center;
 
+    
     .container{
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
+
+        transition: opacity .5s ease-in-out;
+            
+        &.fadeOut{
+            opacity: 0;
+        }
+    
+        &.fadeIn{
+            opacity: 1;
+        }
+        
         >p{
             text-transform: uppercase;
             font-size: 2rem;
@@ -42,4 +56,6 @@
             gap: 0.5rem;
         }
     }
-}
+`
+
+export default Styles

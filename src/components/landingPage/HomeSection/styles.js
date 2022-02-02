@@ -16,10 +16,9 @@ const styles = styled.section`
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
-
-    // divisor
     
     .container{
+        
         
         margin: 0 auto;
         
@@ -33,6 +32,16 @@ const styles = styled.section`
         flex-direction: column;
 
         gap: 1rem;
+
+        transition: opacity .5s ease-in-out;
+        
+        &.fadeOut{
+            opacity: 0;
+        }
+
+        &.fadeIn{
+            opacity: 1;
+        }
 
         .text{
             order: 2;

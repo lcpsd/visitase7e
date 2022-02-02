@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const styles = styled.section`
+
     background: var(--blue-gray-950);
 
     height: 100vh;
@@ -26,6 +27,16 @@ const styles = styled.section`
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        transition: opacity .5s ease-in-out;
+        
+        &.fadeOut{
+            opacity: 0;
+        }
+
+        &.fadeIn{
+            opacity: 1;
+        }
         
         p{
             text-transform: uppercase;

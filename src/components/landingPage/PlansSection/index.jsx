@@ -1,15 +1,17 @@
 import Styles from './styles'
 // import Swiper core and required modules
-import { Pagination, Scrollbar, A11y } from 'swiper';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Scrollbar, A11y } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { useHeaderContext } from '/src/contexts/landingPage/HeaderContext'
 
 export default function PlansSection(){
+    const {currentMenu} = useHeaderContext()
 
     return(
         <Styles id='plansSection'>
-            <div className="container">
-                <p>seu
+            <div
+            className={"container " + (currentMenu == 'plansSection' ? 'fadeIn' : "fadeOut")}>
+                <p>se
                     <br />
                     <span>plano</span>
                 </p>

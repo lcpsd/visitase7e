@@ -24,6 +24,16 @@ const styles = styled.section`
         margin: 0 auto;
         padding: 1rem;
 
+        transition: opacity .5s ease-in-out;
+        
+        &.fadeOut{
+            opacity: 0;
+        }
+
+        &.fadeIn{
+            opacity: 1;
+        }
+
         .carouselDiv{
             
             .swiper{

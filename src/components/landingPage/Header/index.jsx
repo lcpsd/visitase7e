@@ -15,7 +15,8 @@ export default function Header(){
             const allMenus = document.querySelectorAll("#header li")
 
             allMenus.forEach(item => {
-                item.addEventListener("click", () => {
+                item.addEventListener("click", (e) => {
+                    e.preventDefault()
                     setIsMenuOpen(!isMenuOpen)
                 })
             })

@@ -2,8 +2,11 @@ import { A11y, Pagination, Scrollbar } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Styles from './styles'
 import ToolCard from './ToolCard'
+import { useHeaderContext } from '/src/contexts/landingPage/HeaderContext'
 
 export default function ToolsSection(){
+
+    const {currentMenu} = useHeaderContext()
 
     const cardInfo = [
         {
@@ -65,7 +68,7 @@ export default function ToolsSection(){
 
     return(
         <Styles id='toolsSection'>
-            <div className="container">
+            <div className={"container " + (currentMenu == 'toolsSection' ? 'fadeIn' : "fadeOut")}>
                 <p>principais
                     <br />
                     <span>ferramentas</span>
