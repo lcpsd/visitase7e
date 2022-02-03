@@ -4,7 +4,7 @@ const styles = styled.section`
 
     background: var(--blue-gray-950);
 
-    height: 100vh;
+    height: 150vh;
     width: 100%;
 
     color: #fff;
@@ -29,6 +29,7 @@ const styles = styled.section`
 
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
 
         gap: 1rem;
@@ -109,8 +110,12 @@ const styles = styled.section`
 
                 div{
                     display: flex;
-
+                    flex-direction: column;
+                    
                     .inputs{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
                         input{
                             border: 0;
                             flex: 3;
@@ -131,10 +136,6 @@ const styles = styled.section`
                             }
                         }
 
-                        & :first-child{                            
-                            border-right: 1px solid var(--purple-100);
-                        }
-
                         .phoneInput{
                             flex: 4;
 
@@ -151,7 +152,7 @@ const styles = styled.section`
                         padding: 0.5rem;
                         background: var(--purple-100);
                         
-                        border-radius: 0 0.3rem 0.3rem 0;
+                        border-radius: 0.3rem;
                 
                         font-weight: bold;
                 
@@ -165,27 +166,51 @@ const styles = styled.section`
         .smartphone{
             flex: 2;
             order: 1;
+
             img{
                 width: 100%;
+                max-width: 700px;
                 height: auto;
             }
 
         }
     }
-}
 
 @media(min-width: 1024px){
+    height: 100vh;
+
     .container{
         margin-top: 80px;
         flex-direction: row;
         .text{
             order: 1;
+
+            .waitingList{
+
+                div{
+                    .inputs{
+                        flex-direction: row;
+                        gap: 0;
+
+                        input{
+                            border: 0;
+                        }
+                    }
+
+                    button{
+                        border-radius: 0;
+                    }
+                }
+            }
         }
         .smartphone{
             flex: 2;
             order: 2;
         }
     }
+    
+}
+
 `
 
 export default styles
