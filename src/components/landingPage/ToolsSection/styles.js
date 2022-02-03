@@ -40,6 +40,7 @@ const styles = styled.section`
 
                 .swiper-pagination-bullet{
                     margin-top: 1rem;
+
                     background: var(--purple-100);
                 }
             }
@@ -71,6 +72,19 @@ const styles = styled.section`
             }
             }
     }
+
+    @media (min-width: 1024px){
+        .container{
+            .carouselDiv{
+                .swiper{
+                    .swiper-pagination-bullet{
+                        margin: 0 1rem;
+                        padding: 0.3rem;
+                    }
+                }
+        }
+    }
+}
 `
 
 export default styles
