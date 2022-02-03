@@ -21,14 +21,52 @@ export default class MyDocument extends Document {
             {initialProps.styles}
             {sheet.getStyleElement()}
               <NextSeo 
-              title='Se7e | Estúdio de Design'
-              description='Estúdio de design focado em solução.'
+              title='Visita Se7e | Seu Cartão de Visitas Digital'
+              description="Cartão de visitas deigital de respeito"
               canonical='http://www.visitase7e.com'
               additionalLinkTags={[{
                 rel: 'icon',
                 href: '/favicon.ico'
               }]}
-              />
+              additionalMetaTags={[{
+                property: 'dc:creator',
+                content: 'Se7e - Estúdio de Design'
+                }, {
+                  name: 'application-name',
+                  content: 'VisitaSe7e'
+                }, {
+                  httpEquiv: 'x-ua-compatible',
+                  content: 'IE=edge; chrome=1'
+                }]
+              }
+              additionalLinkTags={[
+                {
+                  rel: 'icon',
+                  href: '/public/favicon.ico',
+                },
+              ]}
+
+              openGraph={{
+                type: 'website',
+                url: 'https://www.visitase7e.com',
+                title: 'Visita Se7e',
+                description: 'Seu cartão de visitas digital de respeito',
+                images: [
+                  {
+                    url: '/public/logo.png',
+                    width: 800,
+                    height: 600,
+                    alt: 'logo da empresa',
+                  },
+                  {
+                    url: '/public/smartphone.png',
+                    width: 800,
+                    height: 600,
+                    alt: 'Cartão de visitas digital',
+                  },
+                ],
+              }}
+            />
           </>
         ),
       }
