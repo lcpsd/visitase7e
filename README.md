@@ -1,4 +1,4 @@
-#Visita Se7e (In Dev)
+# Visita Se7e (In Dev)
 A digital business card plataform.
 
 ### Screenshots
