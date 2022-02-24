@@ -1,6 +1,8 @@
 import { useEffect } from "react"
 import { useSession, signIn } from "next-auth/react"
 import { useRouter } from 'next/router'
+import {AiOutlineGoogle} from 'react-icons/ai'
+import styles from './styles.module.scss'
 
 export default function Login(){
 
@@ -16,10 +18,18 @@ export default function Login(){
     }, [session])
 
     return(
-        <div>
-            <img src="/image/logo.png" alt="" />
-            <p>Visita Se7e</p>
-            <button onClick={() => signIn()}>Login</button>
+        <div className={styles.login}>
+            <div>
+                <img src="/image/logo.png" alt="" />
+                <span></span>
+                <p>Visita Se7e</p>
+            </div>
+
+            <button onClick={() => signIn()}>
+                <AiOutlineGoogle/>
+            </button>
+
+            <p>GOOGLE LOGIN</p>
         </div>
     )
 }
