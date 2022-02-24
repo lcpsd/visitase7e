@@ -41,44 +41,16 @@ export default function PlansSection(){
                                 </h4>
 
                                 <p>
-                                Ideal para quem deseja manter o controle dos gastos mês a mês, este modo permite efetuar pagamentos de mensalidade.
+                                Ideal para quem quer pagar 1 unica vez e ficar despreocupado 12 meses.
                                 </p>
 
                                 <span>
-                                    R$25,00/Mês
+                                    R$50,00/Ano
                                 </span>
                             </div>
 
                             <a href={"#"}>
                                 <button>EM BREVE</button>
-                            </a>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="planCard filled">
-
-                            <span className="offCircle">
-                                30% OFF
-                            </span>
-
-                            <div className="text">
-                                <h4>
-                                    Full
-                                </h4>
-
-                                <p>
-                                Ideal para quem não deseja se preocupar com mensalidade todos os meses e ainda pagar mais barato em sua assinatura.
-                                </p>
-
-                                <span>
-                                    R$200,00/Ano
-                                    <p>+50% Off em cartões premium físicos com qr-code</p>
-                                </span>
-                            </div>
-
-                            <a href={"#"}>
-                                <button className='outlined'>EM BREVE</button>
                             </a>
                         </div>
                     </SwiperSlide>
