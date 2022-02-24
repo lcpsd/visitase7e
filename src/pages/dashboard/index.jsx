@@ -13,13 +13,6 @@ export default function Dashboard({SUPER_USER_EMAIL}){
         if(!session){
             router.push("/login")
         }
-
-        if(session?.user.email && SUPER_USER_EMAIL){
-            if(session.user.email !== SUPER_USER_EMAIL){
-                await signOut()
-                router.push("/login")
-            }
-        }
         
     }, [])
     
